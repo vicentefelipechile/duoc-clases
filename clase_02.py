@@ -1,3 +1,4 @@
+#import os;print(os.getcwd())
 caso = 4
 
 
@@ -46,6 +47,9 @@ if caso == 3:
 # Script 2.3
 if caso == 4:
     num = int( input("Ingrese numero (1 a 101): ") )
+
+    #Python avanzado
+    print( f"Error: El numero ({num}) no es valido" if not ( num >= 1 and num <= 101 ) else "El numero es impar" if num % 2 == 1 else "El numero es par" )
 
     if num >= 1 and num <= 101:
         if num % 2 == 1:
