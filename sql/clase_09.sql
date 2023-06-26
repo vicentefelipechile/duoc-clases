@@ -1,3 +1,28 @@
+-- CREAR USUARIO
+
+	-- USER SQL
+	-- Contraseña larga debido a restricciones de la base de datos de oracle
+	CREATE USER "VCORTES" IDENTIFIED BY "Btg.elpepeysusamigos2002"  
+	DEFAULT TABLESPACE "SYSAUX"
+	TEMPORARY TABLESPACE "TEMP";
+
+	-- QUOTAS / Cuotas ilimitadas
+	ALTER USER "VCORTES" QUOTA UNLIMITED ON "SYSTEM";
+	ALTER USER "VCORTES" QUOTA UNLIMITED ON "DBFS_DATA";
+	ALTER USER "VCORTES" QUOTA UNLIMITED ON "SAMPLESCHEMA";
+	ALTER USER "VCORTES" QUOTA UNLIMITED ON "DATA";
+	ALTER USER "VCORTES" QUOTA UNLIMITED ON "SYSAUX";
+
+	-- ROLES / Privilegios
+	GRANT "CONNECT" TO "VCORTES" ;
+	GRANT "RESOURCE" TO "VCORTES" ;
+
+	-- SYSTEM PRIVILEGES
+
+-- FIN CREAR USUARIO
+
+
+
 /*-----------------------------*/
 /*------ CREAR SECUENCIAS -----*/
 /*-----------------------------*/
