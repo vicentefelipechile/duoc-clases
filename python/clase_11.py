@@ -3,23 +3,6 @@
 #---------------------
 
 # Valores por defecto
-"""
-ALUMNOS: dict = {
-    "":""
-    "21186938-0": {
-        "Nombre": "Vicente",
-        "Apellido": "Cortes",
-        "Fecha de Nacimiento": "04-12-2002",
-        "Carrera": "Ingeniera en informatica",
-        "Asignaturas": {
-            "PROGRAMACION DE ALGORITMOS": 6.3,
-            "MODELAMIENTO DE BASE DE DATOS": 5.4
-        }
-    },
-}
-ALUMNOS.clear()
-"""
-
 ALUMNOS: list = []
 VALIDAR: bool = True
 
